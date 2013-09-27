@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS TRANSFORMS</title>
+<style>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+body{font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;}
+#container{
+	width:450px;
+	background-color:yellow;
+	margin: 120px;
+	font-size:16px;
+	
+}
+#container #left{
+	width:20%;
+	height:120px;
+	background-color:#acacac;
+	display:block;float:left;
+	/**KEEP LEFT SIDE STUCK TO RIGHT BORDER**/
+	-ms-transform-origin:0%; /* IE 9 */
+	-webkit-transform-origin:0%; /* Safari and Chrome */
+	-moz-transform-origin:0%; /* Firefox */
+	-o-transform-origin:0%; /* Opera */
+	/**KEEP NORMAL PERSPECTIVE TO PREVENT SPAZZ ON HOVER OFF**/
+	transform:perspective( 0 ) rotateY( 0deg );
+	-ms-transform:perspective( 0 ) rotateY( 0deg ); /* IE 9 */
+	-moz-transform:perspective( 0 ) rotateY( 0deg ); /* Firefox */
+	-webkit-transform:perspective( 0 ) rotateY( 0deg ); /* Safari and Chrome */
+	-o-transform:perspective( 0 ) rotateY( 0deg ); /* Opera */
+	/**TRANSITION TIME**/
+	transition: all 0.7s;
+	-moz-transition: all 0.7s; /* Firefox 4 */
+	-webkit-transition: all 0.7s;/* Safari and Chrome */
+	-o-transition: all 0.7s;/* Opera */
+
+}
+#container #right{
+	width:80%;
+	height:70px;
+	padding-top:50px;
+	background-color:#acacac;
+	display:block;float:left;
+	/**KEEP RIGHT SIDE STUCK TO RIGHT BORDER**/
+	-ms-transform-origin:100%; /* IE 9 */
+	-webkit-transform-origin:100%; /* Safari and Chrome */
+	-moz-transform-origin:100%; /* Firefox */
+	-o-transform-origin:100%; /* Opera */
+	/**KEEP NORMAL PERSPECTIVE TO PREVENT SPAZZ ON HOVER OFF**/
+	transform:perspective( 0 ) rotateY( 0deg );
+	-ms-transform:perspective( 0 ) rotateY( 0deg ); /* IE 9 */
+	-moz-transform:perspective( 0 ) rotateY( 0deg ); /* Firefox */
+	-webkit-transform:perspective( 0 ) rotateY( 0deg ); /* Safari and Chrome */
+	-o-transform:perspective( 0 ) rotateY( 0deg ); /* Opera */
+	/**TRANSITION TIME**/
+	transition: all 0.7s;
+	-moz-transition: all 0.7s; /* Firefox 4 */
+	-webkit-transition: all 0.7s;/* Safari and Chrome */
+	-o-transition: all 0.7s;/* Opera */
+}
+#container #right span{margin: 0px 30px;}
+#container:hover #left{
+	-webkit-transform: perspective( 212px ) rotateY( -45deg );
+	background-color:#d6d6d6;
+}
+#container:hover #right{
+	-webkit-transform: perspective( 873px ) rotateY( 45deg );
+	background-color:#898989;
+}
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<figure id="left"></figure>
+		<figure id="right">
+			<span>Betcha think I can't be 3d!</span>
+		</figure>
+		<div style="clear:both"></div>
+	</div>
+</body>
+
+</html>

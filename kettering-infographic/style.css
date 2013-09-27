@@ -1,0 +1,124 @@
+#ketteringWrapper, html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}html {}
+#ketteringWrapper a {text-decoration:none; color:#000;}
+#ketteringWrapper a:hover {text-decoration:none;}
+#ketteringWrapper .main #overlay{display:none; background-color:blue; position:absolute; top:0; left:0; right:0; bottom:0; z-index:9;}
+#ketteringWrapper .main{ 
+	background: url('kettering-bg.jpg'); 
+	width:960px; 
+	height:2100px; 
+	margin: 0 auto; 
+	position:relative;
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+	font-weight:400; 
+	font-stretch:normal;
+}
+#ketteringWrapper .main strong {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; 
+	font-weight:600; 
+	font-stretch:normal; 
+}
+#ketteringWrapper .main span.light {
+	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal; 
+}
+#ketteringWrapper .main h1 {
+	font-size:48px; 
+	line-height:44px; 
+	text-transform:uppercase; 
+	margin: 0 auto; 
+	text-align:center; 
+	width:80%; 
+	letter-spacing: 5.5px;
+	padding-top:15px;
+}
+#ketteringWrapper .main h2 {
+	font-size:29px; 
+	margin: 0 auto; 
+	text-align:center; 
+	width:90%; 
+	letter-spacing: 1px;
+	padding-top:35px;
+}
+#ketteringWrapper .main h4 {
+	position:absolute;
+	font-size:29px; 
+	
+}
+
+#ketteringWrapper .main h3 {
+	font-size:35px; 
+	line-height:30px;
+	position:absolute;
+}
+#ketteringWrapper ul#moveForward {position:absolute; top: 1600px; left:405px;}
+#ketteringWrapper ul#moveForward li {
+	display:block; 
+	background-color:#353535; 
+	color:#fff; 
+	width:430px; 
+	padding:10px 15px;
+	margin-bottom:40px;
+}
+
+/**VENN DIAGRAM **/
+#ketteringWrapper ul.venn{
+	position:absolute; 
+	top: 313px;
+	font-family:arial;
+	font-size:15.6px;
+	font-weight:600;
+	letter-spacing: -1px;
+}
+#ketteringWrapper ul.venn li a {font-weight:600;}
+#ketteringWrapper ul.venn li .sub-hover {display:none;}
+
+#ketteringWrapper ul#policymakers{left:128px;}
+#ketteringWrapper ul#policymakers li{margin: 0 0 50px 0;position:relative;}
+#ketteringWrapper ul#policymakers li#one{left:84px;}
+#ketteringWrapper ul#policymakers li#two{left:40px;}
+#ketteringWrapper ul#policymakers li#three{left:8px;}
+#ketteringWrapper ul#policymakers li#four{left:42px;}
+#ketteringWrapper ul#policymakers li#five{left:109px;top:-20px;}
+
+#ketteringWrapper ul#middle{top:370px;left:396px;}
+#ketteringWrapper ul#middle li{position:relative; text-align: center;}
+#ketteringWrapper ul#middle li#one{}
+#ketteringWrapper ul#middle li#two{top:180px;}
+
+#ketteringWrapper ul#parents{left:530px;}
+#ketteringWrapper ul#parents li{margin: 0 0 33px; position:relative;}
+#ketteringWrapper ul#parents li#one{}
+#ketteringWrapper ul#parents li#two{left:75px;}
+#ketteringWrapper ul#parents li#three{left:105px;}
+#ketteringWrapper ul#parents li#four{left:72px;}
+#ketteringWrapper ul#parents li#five{}
+
+/**THREE BOXES**/
+#ketteringWrapper ul#moveForward li span {cursor:default;}
+#ketteringWrapper ul#moveForward li.first {border-left:8px solid #52afb2;}
+#ketteringWrapper ul#moveForward li.second {border-left:8px solid #a4f7bd;}
+#ketteringWrapper ul#moveForward li.third {border-left:8px solid #f8e276;}
+#ketteringWrapper ul#moveForward li span {color:#fff; font-size:19px; line-height:30px;font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:300; font-stretch:normal; }
+#ketteringWrapper .align-right{text-align: right;}
+#ketteringWrapper .align-left{text-align: left;}
+#ketteringWrapper .align-center{text-align: center;}
+
+/**VENN HOVER BOX***/
+#ketteringWrapper #venn_hover{z-index:10; background-color:#fff;position:absolute; display:none; width:80%;top:20%;left:5%; padding:5% 5% 3% 5%;
+/*-webkit-box-shadow: 0px 0px 4px 0px #e3e3e3; 
+box-shadow: 0px 0px 4px 0px #e3e3e3; */
+-webkit-border-radius: 3px; 
+border-radius: 3px; 
+cursor:pointer;
+}
+#ketteringWrapper #venn_hover p,
+#ketteringWrapper #venn_hover ul li
+{padding-bottom:10px; font-size:15px; line-height:18px;}
+
+svg{font-family:arial;}
+
+/**WORD CLOUD HOVER**/
+#ketteringWrapper .word-hover {color:red; cursor:pointer;}
+#ketteringWrapper .word-hover:hover {color:red;}
+
+/* CLEARFIX FIX */
+#ketteringWrapper .cf:before,#ketteringWrapper .cf:after {content:"";display:table;}#ketteringWrapper .cf:after {clear:both;}#ketteringWrapper .cf {zoom:1;}

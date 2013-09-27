@@ -1,0 +1,14 @@
+#container ul#filters { position:absolute; left:0px;}
+
+#container { }
+#container #left{  position:absolute; left:0; padding-top:40px;}
+
+#logo1 {width:200px !important;}
+
+#container #left nav .block li {border-bottom: 1px solid #acacac;}
+
+#container #left #info {text-align:center; width:100%; padding:20px 0 0 0px;}
+
+#container #main #center .item .frame .bar  {display:none;}
+
+#container{margin-bottom:50px;}

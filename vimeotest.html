@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<title>Vimeo Test</title>
+	<meta http-equiv="Content-Language" content="en-us" />
+	
+	<meta name="author" content="Niall Doherty" />
+	
+	<!-- Begin JavaScript -->
+		<script type='text/javascript' src='http://a.vimeocdn.com/js/froogaloop2.min.js'></script>
+
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		
+		<script type="text/javascript">
+
+			$().ready(function() {
+			
+				//HIDE FUNCTIONALITY
+				$("p").hide();
+				$("a").click(function ( event ) {
+					event.preventDefault();
+					$(this).fadeOut();
+					$f("myIframe").api('play');
+					event.preventDefault();
+				});
+   			});
+   			
+		</script>
+		<script>
+
+		
+		</script>
+	
+</head>
+
+<body>
+
+<a href="#" id="trigger">Play</a>
+
+<iframe id="myIframe" src="http://player.vimeo.com/video/6761626?api=1&player_id=myIframe" width="400" height="225" frameborder="0"></iframe> 
+
+<br><br>
+  <p>Hello</p>
+  <a href="#">Click to hide me too</a>
+  <p>Here is another paragraph</p>
+</body>
+
+</html>
